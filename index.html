@@ -1,0 +1,47 @@
+<h1 id="tema">Ruh Ordo</h1>
+<p id="text" style="color:blue">Welcome to Ordo</p>
+
+<img id="photo" src="./Naryncountryside.jpg" height="400">
+<br>
+<button onclick="next()">Next</button>
+<button onclick="back()">Back</button>
+<script>
+    function back(){
+        document.getElementById("photo").src="Naryncountryside.jpg"
+        document.getElementById("tema").innerHTML="Ruh Ordo";
+        document.getElementById("text").innerHTML="Welcome to Ordo";
+        document.getElementById("text").style.color="blue";
+        document.body.style.background="wheat";
+    }
+</script>
+
+<script>
+    function next(){
+        document.getElementById("photo").src="Aksu_Jabgly_3.JPG";
+        document.getElementById("tema").innerHTML="Osh";
+        document.getElementById("text").innerHTML="Welcome to Osh";
+        document.getElementById("text").style.color="blue";
+        document.body.style.background="wheat"
+    }
+</script> 
+
+<br>
+<br>
+<h1 id="counter">0</h1>
+<button onclick="plus()">plus for resewrve</button>
+<script>
+    var c=0
+    function plus(){
+        c++;//c+1
+        document.getElementById("counter").innerHTML=c;
+    }
+</script>
+<button onclick="minus()">plus for resewrve</button>
+<script>
+    var c
+    function minus(){
+        c=c-1;//c+1
+        document.getElementById("counter").innerHTML=c;
+    }
+</script>
+
